@@ -1,16 +1,65 @@
-# React + Vite
+# Amanah Elektronik — Admin Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dashboard administrasi berbasis web untuk sistem penyewaan perangkat elektronik.
 
-Currently, two official plugins are available:
+## Tentang
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Aplikasi ini digunakan oleh admin Amanah Elektronik untuk mengelola operasional penyewaan, mulai dari data alat hingga transaksi dan pengembalian.
 
-## React Compiler
+## Fitur
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Login Admin
+* Dashboard Statistik
+* Manajemen Kategori
+* Manajemen Alat
+* Manajemen Pelanggan
+* Manajemen Penyewaan
+* Pengembalian Alat
+* Laporan
 
-## Expanding the ESLint configuration
+## Teknologi
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React.js
+* JavaScript
+* CSS
+* RESTful API
+* Axios
+* Recharts
+* JWT Authentication
+
+## Tampilan
+
+### Login
+
+Screenshot akan ditambahkan.
+
+### Dashboard
+
+Screenshot akan ditambahkan.
+
+### Data Alat
+
+Screenshot akan ditambahkan.
+
+### Data Penyewaan
+
+Screenshot akan ditambahkan.
+
+## Backend
+
+Aplikasi ini menggunakan REST API dari:
+
+**Amanah Elektronik API — Laravel**
+
+## Peran Saya
+
+* Mengembangkan antarmuka admin menggunakan React.js.
+* Membuat reusable components.
+* Mengintegrasikan REST API.
+* Mengelola autentikasi menggunakan JWT.
+* Mengembangkan halaman dashboard, alat, pelanggan, penyewaan, dan laporan.
+* Melakukan pengujian integrasi API.
+
+## Catatan
+
+Project ini merupakan bagian dari sistem **Amanah Elektronik Rental Management System**.
