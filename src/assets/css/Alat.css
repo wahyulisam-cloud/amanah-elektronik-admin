@@ -1,0 +1,1375 @@
+/* =========================================================
+   AMANAH ELEKTRONIK
+   ALAT PAGE
+   SHARED MODERN DASHBOARD STYLE
+========================================================= */
+
+
+/* =========================================================
+   PAGE HEADING
+========================================================= */
+
+.alat-page-heading {
+  margin-bottom: 24px;
+}
+
+
+/* =========================================================
+   MAIN CONTENT CARD
+========================================================= */
+
+.alat-content-card {
+  position: relative;
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 24px;
+
+  background: rgba(255, 255, 255, 0.86);
+
+  border: 1px solid rgba(224, 234, 246, 0.95);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 8px 28px rgba(24, 61, 115, 0.055);
+
+  overflow: hidden;
+}
+
+
+/*
+   Decorative glass circle
+   subtle supaya tidak terlalu ramai
+*/
+
+.alat-content-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 150px;
+  height: 150px;
+
+  right: -80px;
+  top: -80px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(22, 136, 240, 0.08),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   TOOLBAR
+========================================================= */
+
+.alat-toolbar {
+  position: relative;
+
+  z-index: 1;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 22px;
+}
+
+.alat-toolbar-info {
+  min-width: 0;
+}
+
+.alat-toolbar-info .section-eyebrow {
+  margin-bottom: 5px;
+}
+
+.alat-toolbar-info h3 {
+  margin: 0;
+
+  color: #183c82;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  letter-spacing: -0.2px;
+}
+
+.alat-toolbar-info p {
+  margin: 5px 0 0;
+
+  color: #98a4b6;
+
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   TOOLBAR ACTIONS
+========================================================= */
+
+.alat-toolbar-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.alat-search-wrapper {
+  position: relative;
+
+  width: 250px;
+}
+
+.alat-search-icon {
+  position: absolute;
+
+  left: 14px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #91a0b4;
+
+  font-size: 19px;
+
+  pointer-events: none;
+}
+
+.alat-search-input {
+  width: 100%;
+
+  height: 42px;
+
+  box-sizing: border-box;
+
+  padding: 0 14px 0 40px;
+
+  border: 1px solid #dfe8f2;
+
+  border-radius: 11px;
+
+  outline: none;
+
+  background: rgba(248, 251, 255, 0.9);
+
+  color: #344968;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.alat-search-input::placeholder {
+  color: #a5b0bf;
+}
+
+.alat-search-input:focus {
+  border-color: #1688f0;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 4px rgba(22, 136, 240, 0.08);
+}
+
+
+/* =========================================================
+   ADD BUTTON
+========================================================= */
+
+.alat-add-button {
+  height: 42px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 0 17px;
+
+  border: none;
+
+  border-radius: 11px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1688f0,
+      #1769cf
+    );
+
+  color: white;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 7px 18px rgba(22, 136, 240, 0.2);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.alat-add-button span {
+  font-size: 18px;
+
+  line-height: 1;
+}
+
+.alat-add-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 11px 25px rgba(22, 136, 240, 0.25);
+}
+
+.alat-add-button:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================================
+   TABLE WRAPPER
+========================================================= */
+
+.alat-table-wrapper {
+  position: relative;
+
+  z-index: 1;
+
+  width: 100%;
+
+  overflow-x: auto;
+
+  border-radius: 13px;
+
+  scrollbar-width: thin;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+
+/* =========================================================
+   SHARED TABLE
+========================================================= */
+
+.data-table {
+  width: 100%;
+
+  min-width: 900px;
+
+  border-collapse: separate;
+
+  border-spacing: 0;
+
+  background: transparent;
+}
+
+.data-table th {
+  padding: 13px 14px;
+
+  background: #f5f8fc;
+
+  color: #7c8ba2;
+
+  border-bottom: 1px solid #e7edf5;
+
+  text-align: left;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.7px;
+
+  white-space: nowrap;
+}
+
+.data-table th:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+.data-table th:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.data-table td {
+  padding: 14px;
+
+  color: #53637a;
+
+  border-bottom: 1px solid #edf1f6;
+
+  background: rgba(255, 255, 255, 0.45);
+
+  font-size: 12px;
+
+  white-space: nowrap;
+}
+
+.data-table tbody tr {
+  transition:
+    background 0.2s ease;
+}
+
+.data-table tbody tr:hover td {
+  background: rgba(248, 251, 255, 0.95);
+}
+
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* =========================================================
+   TABLE NUMBER
+========================================================= */
+
+.table-number {
+  color: #9ba8ba;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.alat-table-image,
+.alat-image-placeholder {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  object-fit: cover;
+}
+
+.alat-table-image {
+  border: 1px solid #e5edf6;
+
+  background: #f7faff;
+
+  box-shadow:
+    0 4px 12px rgba(24, 61, 115, 0.06);
+}
+
+.alat-image-placeholder {
+  background: #f1f6fc;
+
+  border: 1px solid #e4ecf5;
+
+  color: #9aa8ba;
+
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   NAME
+========================================================= */
+
+.alat-name-cell {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.alat-name-cell strong {
+  color: #344968;
+
+  font-size: 12px;
+
+  font-weight: 650;
+}
+
+.alat-name-cell span {
+  color: #a0adbd;
+
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   CATEGORY
+========================================================= */
+
+.category-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 6px 9px;
+
+  border-radius: 8px;
+
+  background: #eef6ff;
+
+  color: #3977b7;
+
+  font-size: 10px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.price-text {
+  color: #163c88;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   STOCK
+========================================================= */
+
+.stock-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 6px 9px;
+
+  border-radius: 8px;
+
+  background: #eef8f3;
+
+  color: #21945b;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+.stock-badge.empty {
+  background: #fff1f1;
+
+  color: #dc4b4b;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.action-buttons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+.table-action {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  border-radius: 9px;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.table-action:hover {
+  transform: translateY(-2px);
+}
+
+.table-action.detail {
+  background: #eaf4ff;
+
+  color: #1976d2;
+}
+
+.table-action.detail:hover {
+  background: #1976d2;
+
+  color: white;
+
+  box-shadow:
+    0 6px 15px rgba(25, 118, 210, 0.2);
+}
+
+.table-action.edit {
+  background: #fff5d9;
+
+  color: #d99b00;
+}
+
+.table-action.edit:hover {
+  background: #f5b900;
+
+  color: white;
+}
+
+.table-action.delete {
+  background: #fff0f1;
+
+  color: #dc4b5a;
+}
+
+.table-action.delete:hover {
+  background: #dc3545;
+
+  color: white;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.data-table-empty {
+  padding: 0 !important;
+
+  border-bottom: none !important;
+}
+
+.empty-state {
+  min-height: 180px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 5px;
+}
+
+.empty-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 5px;
+
+  border-radius: 14px;
+
+  background: #f1f6fc;
+
+  font-size: 20px;
+}
+
+.empty-state strong {
+  color: #53637a;
+
+  font-size: 13px;
+}
+
+.empty-state span {
+  color: #a0acbb;
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.alat-loading {
+  min-height: 250px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+}
+
+.alat-loading p {
+  margin: 0;
+
+  color: #8b99ac;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.alat-pagination {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 22px;
+}
+
+.alat-pagination-btn {
+  min-width: 36px;
+  height: 36px;
+
+  padding: 0 10px;
+
+  border: 1px solid #dce5ef;
+
+  background: #ffffff;
+
+  color: #416285;
+
+  border-radius: 9px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.alat-pagination-btn:hover:not(:disabled) {
+  background: #eef6ff;
+
+  border-color: #1688f0;
+
+  color: #1688f0;
+
+  transform: translateY(-1px);
+}
+
+.alat-pagination-btn.active {
+  background: #1688f0;
+
+  border-color: #1688f0;
+
+  color: white;
+
+  box-shadow:
+    0 5px 13px rgba(22, 136, 240, 0.2);
+}
+
+.alat-pagination-btn:disabled {
+  opacity: 0.45;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   PAGINATION INFO
+========================================================= */
+
+.alat-pagination-info {
+  margin-top: 11px;
+
+  color: #8e9bad;
+
+  text-align: center;
+
+  font-size: 10px;
+}
+
+.alat-pagination-info strong {
+  color: #53637a;
+}
+
+
+/* =========================================================
+   MODAL BASE
+========================================================= */
+
+.modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 2000;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background:
+    rgba(5, 24, 55, 0.42);
+
+  backdrop-filter: blur(7px);
+
+  -webkit-backdrop-filter: blur(7px);
+
+  overflow-y: auto;
+}
+
+
+/* =========================================================
+   GLASSMORPHISM MODAL
+========================================================= */
+
+.modal-box {
+  position: relative;
+
+  width: min(100%, 520px);
+
+  max-height: calc(100vh - 40px);
+
+  box-sizing: border-box;
+
+  padding: 26px;
+
+  overflow-y: auto;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.96),
+      rgba(247, 251, 255, 0.91)
+    );
+
+  border: 1px solid rgba(255, 255, 255, 0.9);
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 25px 70px rgba(9, 39, 95, 0.22);
+
+  backdrop-filter: blur(20px);
+
+  -webkit-backdrop-filter: blur(20px);
+}
+
+
+/* Decorative glass circle */
+
+.modal-box::before {
+  content: "";
+
+  position: absolute;
+
+  width: 120px;
+  height: 120px;
+
+  right: -60px;
+  top: -60px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(22, 136, 240, 0.12),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   MODAL FORM
+========================================================= */
+
+.modal-box h3 {
+  position: relative;
+
+  margin: 0 0 22px;
+
+  color: #183c82;
+
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+.modal-box form {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.modal-box label {
+  margin-top: 4px;
+
+  color: #53637a;
+
+  font-size: 11px;
+
+  font-weight: 650;
+}
+
+.modal-box input,
+.modal-box textarea,
+.modal-box select {
+  width: 100%;
+
+  min-height: 42px;
+
+  box-sizing: border-box;
+
+  padding: 10px 12px;
+
+  border: 1px solid #dfe7f1;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.82);
+
+  color: #344968;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.modal-box textarea {
+  min-height: 90px;
+
+  resize: vertical;
+}
+
+.modal-box input:focus,
+.modal-box textarea:focus,
+.modal-box select:focus {
+  border-color: #1688f0;
+
+  background: white;
+
+  box-shadow:
+    0 0 0 4px rgba(22, 136, 240, 0.08);
+}
+
+
+/* =========================================================
+   FILE INPUT
+========================================================= */
+
+.modal-box input[type="file"] {
+  min-height: auto;
+
+  padding: 9px;
+
+  background: #f8fbff;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   MODAL ACTION
+========================================================= */
+
+.modal-action {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 9px;
+
+  margin-top: 17px;
+}
+
+.modal-action .btn {
+  min-height: 40px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 0 15px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  font-family: inherit;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.modal-action .btn:hover {
+  transform: translateY(-1px);
+}
+
+.modal-action .btn-secondary {
+  background: #edf2f7;
+
+  color: #65758c;
+}
+
+.modal-action .btn-primary {
+  background:
+    linear-gradient(
+      135deg,
+      #1688f0,
+      #1769cf
+    );
+
+  color: white;
+
+  box-shadow:
+    0 6px 16px rgba(22, 136, 240, 0.18);
+}
+
+
+/* =========================================================
+   DETAIL MODAL
+========================================================= */
+
+.detail-modal {
+  width: min(100%, 600px);
+}
+
+.detail-header {
+  position: relative;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 20px;
+}
+
+.detail-header h3 {
+  margin: 0;
+
+  font-size: 20px;
+}
+
+.detail-subtitle {
+  margin: 5px 0 0;
+
+  color: #98a4b6;
+
+  font-size: 11px;
+}
+
+.close-btn {
+  width: 36px;
+  height: 36px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #f1f5fa;
+
+  color: #7d8ca1;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.close-btn:hover {
+  background: #ffe8e8;
+
+  color: #dc3545;
+
+  transform: rotate(3deg);
+}
+
+
+/* =========================================================
+   DETAIL IMAGE
+========================================================= */
+
+.detail-image-wrapper {
+  width: 100%;
+
+  margin-bottom: 20px;
+
+  padding: 8px;
+
+  box-sizing: border-box;
+
+  background: #f4f8fd;
+
+  border: 1px solid #e4ecf5;
+
+  border-radius: 15px;
+}
+
+.detail-image-wrapper img {
+  width: 100%;
+
+  height: 230px;
+
+  display: block;
+
+  object-fit: cover;
+
+  border-radius: 11px;
+}
+
+
+/* =========================================================
+   DETAIL GRID
+========================================================= */
+
+.detail-info-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 11px;
+}
+
+.detail-card {
+  padding: 15px;
+
+  border: 1px solid #e4ebf4;
+
+  border-radius: 13px;
+
+  background:
+    rgba(248, 251, 255, 0.82);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.detail-card:hover {
+  transform: translateY(-2px);
+
+  border-color: #d5e5f7;
+}
+
+.detail-card span {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-bottom: 8px;
+
+  color: #8492a7;
+
+  font-size: 10px;
+
+  font-weight: 600;
+}
+
+.detail-card span svg {
+  color: #1688f0;
+}
+
+.detail-card strong {
+  display: block;
+
+  color: #344968;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+.detail-card .status-badge {
+  display: inline-flex;
+
+  padding: 6px 9px;
+
+  border-radius: 8px;
+
+  background: #eef8f3;
+
+  color: #21945b;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .alat-toolbar {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .alat-toolbar-actions {
+    width: 100%;
+  }
+
+  .alat-search-wrapper {
+    flex: 1;
+
+    width: auto;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .alat-page-heading {
+    margin-bottom: 18px;
+  }
+
+  .alat-content-card {
+    padding: 16px;
+
+    border-radius: 17px;
+  }
+
+  .alat-toolbar {
+    gap: 15px;
+
+    margin-bottom: 17px;
+  }
+
+  .alat-toolbar-info h3 {
+    font-size: 16px;
+  }
+
+  .alat-toolbar-info p {
+    max-width: 260px;
+
+    line-height: 1.5;
+  }
+
+  .alat-toolbar-actions {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 9px;
+  }
+
+  .alat-search-wrapper {
+    width: 100%;
+  }
+
+  .alat-add-button {
+    width: 100%;
+  }
+
+  /*
+     IMPORTANT:
+     table tetap memiliki min-width.
+     Pada HP tabel tidak keluar layar,
+     tetapi bisa di-scroll horizontal.
+  */
+
+  .alat-table-wrapper {
+    margin-left: -2px;
+
+    width: calc(100% + 4px);
+
+    overflow-x: auto;
+  }
+
+  .data-table {
+    min-width: 900px;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 12px;
+  }
+
+  .alat-pagination {
+    gap: 5px;
+
+    overflow-x: auto;
+
+    justify-content: flex-start;
+
+    padding: 3px;
+
+    scrollbar-width: none;
+  }
+
+  .alat-pagination::-webkit-scrollbar {
+    display: none;
+  }
+
+  .alat-pagination-btn {
+    flex-shrink: 0;
+
+    min-width: 34px;
+
+    height: 34px;
+  }
+
+  .modal-overlay {
+    align-items: flex-start;
+
+    padding: 14px;
+
+    padding-top: 24px;
+  }
+
+  .modal-box {
+    width: 100%;
+
+    max-height: calc(100vh - 48px);
+
+    padding: 20px;
+
+    border-radius: 19px;
+  }
+
+  .detail-modal {
+    width: 100%;
+  }
+
+  .detail-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-image-wrapper img {
+    height: 190px;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .alat-content-card {
+    padding: 13px;
+  }
+
+  .modal-box {
+    padding: 17px;
+  }
+
+  .modal-action {
+    flex-direction: column-reverse;
+  }
+
+  .modal-action .btn {
+    width: 100%;
+  }
+
+}

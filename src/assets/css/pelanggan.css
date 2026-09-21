@@ -1,0 +1,1887 @@
+/* =========================================================
+   PELANGGAN PAGE
+   Modern • Clean • Premium • Glassmorphism
+========================================================= */
+
+.pelanggan-page {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* =========================================================
+   BACKGROUND DECORATION
+========================================================= */
+
+.pelanggan-bg-circle {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(90px);
+  opacity: 0.28;
+  z-index: 0;
+}
+
+.circle-one {
+  width: 300px;
+  height: 300px;
+  background: #1688f0;
+  top: 80px;
+  right: 80px;
+}
+
+.circle-two {
+  width: 260px;
+  height: 260px;
+  background: #08c9f5;
+  bottom: 50px;
+  left: 250px;
+}
+
+.circle-three {
+  width: 180px;
+  height: 180px;
+  background: #5b8def;
+  top: 45%;
+  right: 35%;
+  opacity: 0.16;
+}
+
+/* =========================================================
+   BODY
+========================================================= */
+
+.pelanggan-body {
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================================================
+   PAGE HEADING
+========================================================= */
+
+.pelanggan-page-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 28px;
+}
+
+.pelanggan-page-heading > div:first-child {
+  max-width: 650px;
+}
+
+.pelanggan-page-heading h1 {
+  margin: 7px 0 8px;
+  font-size: 30px;
+  font-weight: 750;
+  letter-spacing: -0.6px;
+  color: #102a43;
+}
+
+.pelanggan-page-heading p {
+  margin: 0;
+  color: #6b7c93;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.dashboard-eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #1688f0;
+}
+
+/* =========================================================
+   ADD BUTTON
+========================================================= */
+
+.pelanggan-add-btn {
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1688f0, #0879d1);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(22, 136, 240, 0.22);
+  transition: all 0.25s ease;
+}
+
+.pelanggan-add-icon {
+  width: 18px;
+  height: 18px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1.5px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+
+  font-size: 14px;
+  line-height: 1;
+}
+
+.pelanggan-add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(22, 136, 240, 0.3);
+}
+
+/* =========================================================
+   MAIN CARD
+========================================================= */
+
+.pelanggan-card {
+  position: relative;
+
+  background: rgba(255, 255, 255, 0.76);
+
+  border: 1px solid rgba(255, 255, 255, 0.85);
+
+  border-radius: 20px;
+
+  padding: 25px;
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  box-shadow: 0 18px 45px rgba(20, 60, 100, 0.08);
+
+  overflow: hidden;
+}
+
+.pelanggan-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.pelanggan-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  margin-bottom: 24px;
+}
+
+.section-eyebrow {
+  display: inline-block;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1.4px;
+
+  color: #1688f0;
+
+  margin-bottom: 4px;
+}
+
+.pelanggan-card-header h3 {
+  margin: 0 0 5px;
+
+  color: #16324f;
+
+  font-size: 19px;
+  font-weight: 750;
+}
+
+.pelanggan-card-header p {
+  margin: 0;
+
+  color: #7b8da1;
+
+  font-size: 12px;
+}
+
+/* =========================================================
+   HEADER TOOLS
+========================================================= */
+
+.pelanggan-header-tools {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.pelanggan-search {
+  position: relative;
+
+  width: 260px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+
+  background: rgba(248, 251, 255, 0.9);
+
+  border: 1px solid #e1eaf3;
+
+  border-radius: 12px;
+
+  transition: all 0.25s ease;
+}
+
+.pelanggan-search:focus-within {
+  background: white;
+
+  border-color: #1688f0;
+
+  box-shadow: 0 0 0 4px rgba(22, 136, 240, 0.08);
+}
+
+.pelanggan-search-icon {
+  width: 18px;
+  height: 18px;
+
+  margin-left: 13px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #71879b;
+}
+
+.pelanggan-search-icon svg {
+  width: 15px;
+  height: 15px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+}
+
+.pelanggan-search input {
+  width: 100%;
+  height: 100%;
+
+  padding: 0 38px 0 10px;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #203b56;
+
+  font-size: 13px;
+}
+
+.pelanggan-search input::placeholder {
+  color: #9aabba;
+}
+
+.pelanggan-search-clear {
+  position: absolute;
+
+  right: 8px;
+
+  width: 25px;
+  height: 25px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #eaf3fb;
+
+  color: #54718d;
+
+  cursor: pointer;
+
+  font-size: 17px;
+
+  line-height: 1;
+
+  transition: 0.2s;
+}
+
+.pelanggan-search-clear:hover {
+  background: #1688f0;
+  color: white;
+}
+
+/* =========================================================
+   TOTAL
+========================================================= */
+
+.pelanggan-total {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 85px;
+
+  text-align: right;
+}
+
+.pelanggan-total strong {
+  font-size: 22px;
+
+  line-height: 1;
+
+  color: #1688f0;
+}
+
+.pelanggan-total span {
+  margin-top: 5px;
+
+  font-size: 10px;
+
+  color: #8497aa;
+}
+
+/* =========================================================
+   TABLE WRAPPER
+========================================================= */
+
+.pelanggan-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.pelanggan-table {
+  width: 100%;
+
+  border-collapse: separate;
+  border-spacing: 0;
+
+  min-width: 700px;
+}
+
+.pelanggan-table thead th {
+  padding: 13px 15px;
+
+  background: rgba(243, 248, 253, 0.85);
+
+  color: #6f8296;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+
+  text-transform: uppercase;
+
+  text-align: left;
+
+  border-top: 1px solid #edf2f7;
+
+  border-bottom: 1px solid #e4ebf2;
+}
+
+.pelanggan-table thead th:first-child {
+  border-radius: 10px 0 0 10px;
+
+  text-align: center;
+
+  width: 60px;
+}
+
+.pelanggan-table thead th:last-child {
+  border-radius: 0 10px 10px 0;
+
+  text-align: center;
+
+  width: 145px;
+}
+
+.pelanggan-table tbody td {
+  padding: 15px;
+
+  border-bottom: 1px solid #edf2f7;
+
+  color: #34495e;
+
+  font-size: 13px;
+
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.pelanggan-table tbody tr {
+  transition: all 0.2s ease;
+}
+
+.pelanggan-table tbody tr:hover td {
+  background: rgba(240, 248, 255, 0.72);
+}
+
+.pelanggan-number {
+  text-align: center;
+
+  color: #8ca0b3 !important;
+
+  font-size: 12px !important;
+}
+
+/* =========================================================
+   CUSTOMER NAME
+========================================================= */
+
+.pelanggan-name {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.pelanggan-avatar {
+  width: 37px;
+  height: 37px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+
+  background: linear-gradient(135deg, #e9f5ff, #d8efff);
+
+  color: #1688f0;
+
+  font-size: 14px;
+}
+
+.pelanggan-name strong {
+  display: block;
+
+  color: #183b5b;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.pelanggan-name span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #98a9b8;
+
+  font-size: 10px;
+}
+
+/* =========================================================
+   PHONE / EMAIL
+========================================================= */
+
+.pelanggan-phone,
+.pelanggan-email {
+  color: #48647d;
+  font-size: 12px;
+}
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.pelanggan-action-buttons {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+}
+
+.pelanggan-action-btn {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  border-radius: 9px;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.pelanggan-action-btn:hover {
+  transform: translateY(-2px);
+}
+
+.pelanggan-action-btn.detail {
+  background: #e7f4ff;
+  color: #1688f0;
+}
+
+.pelanggan-action-btn.edit {
+  background: #fff5dc;
+  color: #e5a000;
+}
+
+.pelanggan-action-btn.delete {
+  background: #ffe9e8;
+  color: #e53935;
+}
+
+.pelanggan-action-btn.detail:hover {
+  box-shadow: 0 6px 14px rgba(22, 136, 240, 0.18);
+}
+
+.pelanggan-action-btn.edit:hover {
+  box-shadow: 0 6px 14px rgba(229, 160, 0, 0.18);
+}
+
+.pelanggan-action-btn.delete:hover {
+  box-shadow: 0 6px 14px rgba(229, 57, 53, 0.18);
+}
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.pelanggan-empty {
+  padding: 55px 20px !important;
+
+  text-align: center;
+}
+
+.pelanggan-empty-content {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.pelanggan-empty-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 12px;
+
+  border-radius: 15px;
+
+  background: #eef6ff;
+
+  color: #1688f0;
+
+  font-size: 18px;
+}
+
+.pelanggan-empty-content strong {
+  color: #536b82;
+
+  font-size: 13px;
+}
+
+.pelanggan-empty-content span {
+  margin-top: 5px;
+
+  color: #9aaaba;
+
+  font-size: 11px;
+}
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.pelanggan-loading {
+  min-height: 230px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+}
+
+.pelanggan-loading p {
+  margin: 0;
+
+  color: #7d90a3;
+
+  font-size: 12px;
+}
+
+.pelanggan-spinner {
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+
+  border: 3px solid #e6f0f8;
+
+  border-top-color: #1688f0;
+
+  animation: pelanggan-spin 0.8s linear infinite;
+}
+
+@keyframes pelanggan-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.pelanggan-pagination {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  margin-top: 22px;
+}
+
+.pelanggan-pagination-btn {
+  min-width: 36px;
+  height: 36px;
+
+  padding: 0 10px;
+
+  border: 1px solid #dce7f0;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  color: #55718b;
+
+  border-radius: 9px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.pelanggan-pagination-btn:hover:not(:disabled) {
+  border-color: #1688f0;
+
+  color: #1688f0;
+
+  background: #eef7ff;
+}
+
+.pelanggan-pagination-btn.active {
+  border-color: #1688f0;
+
+  background: #1688f0;
+
+  color: white;
+
+  box-shadow: 0 6px 15px rgba(22, 136, 240, 0.2);
+}
+
+.pelanggan-pagination-btn:disabled {
+  opacity: 0.35;
+
+  cursor: not-allowed;
+}
+
+.pelanggan-pagination-info {
+  margin-top: 11px;
+
+  text-align: center;
+
+  color: #8798a8;
+
+  font-size: 11px;
+}
+
+.pelanggan-pagination-info strong {
+  color: #536c84;
+}
+
+/* =========================================================
+   MODAL OVERLAY
+   =========================================================
+
+   PENTING:
+   Overlay sengaja menggunakan inset: 0.
+
+   Artinya:
+   - Header ikut tertutup
+   - Sidebar ikut tertutup
+   - Content ikut tertutup
+   - Seluruh background bisa di-blur
+
+   Modal sendiri berada di atas overlay sehingga
+   tetap tajam.
+========================================================= */
+
+.pelanggan-modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 9999;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(8, 28, 65, 0.3),
+    rgba(8, 28, 65, 0.42)
+  );
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  animation: pelanggan-overlay-show 0.22s ease;
+}
+
+@keyframes pelanggan-overlay-show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.pelanggan-detail-modal,
+.pelanggan-form-modal {
+  position: relative;
+
+  z-index: 10000;
+
+  width: min(760px, 100%);
+
+  max-height: calc(100vh - 48px);
+
+  overflow-y: auto;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.985),
+    rgba(247, 251, 255, 0.97)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.95);
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 35px 90px rgba(4, 30, 65, 0.3),
+    0 10px 30px rgba(10, 42, 88, 0.1);
+
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+
+  animation: pelanggan-modal-show 0.25s ease;
+
+  scrollbar-width: thin;
+  scrollbar-color: #c9d8e9 transparent;
+}
+
+@keyframes pelanggan-modal-show {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.975);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* =========================================================
+   MODAL HEADER
+========================================================= */
+
+.pelanggan-detail-header,
+.pelanggan-form-header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 24px 26px 20px;
+
+  border-bottom: 1px solid #edf2f7;
+}
+
+.pelanggan-detail-heading,
+.pelanggan-form-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  min-width: 0;
+}
+
+.pelanggan-detail-avatar,
+.pelanggan-form-icon {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+
+  background: linear-gradient(145deg, #edf8ff, #e2efff);
+
+  border: 1px solid #dcecf9;
+
+  color: #1688f0;
+
+  font-size: 19px;
+
+  box-shadow: 0 8px 20px rgba(22, 136, 240, 0.08);
+}
+
+.pelanggan-detail-heading span,
+.pelanggan-form-title span {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #1688f0;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.4px;
+}
+
+.pelanggan-detail-heading h3,
+.pelanggan-form-title h3 {
+  margin: 0;
+
+  color: #183c82;
+
+  font-size: 19px;
+
+  font-weight: 750;
+
+  letter-spacing: -0.3px;
+}
+
+.pelanggan-detail-heading p,
+.pelanggan-form-title p {
+  margin: 4px 0 0;
+
+  color: #98a6b8;
+
+  font-size: 10px;
+}
+
+/* =========================================================
+   CLOSE BUTTON
+========================================================= */
+
+.pelanggan-modal-close {
+  width: 36px;
+  height: 36px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #e4ebf3;
+
+  border-radius: 11px;
+
+  background: #ffffff;
+
+  color: #8b9aaf;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.pelanggan-modal-close:hover {
+  background: #fff1f1;
+
+  color: #dc3545;
+
+  transform: rotate(3deg);
+}
+
+/* =========================================================
+   DETAIL DATA
+========================================================= */
+
+.pelanggan-detail-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 12px;
+
+  padding: 22px 26px;
+}
+
+.pelanggan-detail-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 11px;
+
+  min-width: 0;
+
+  padding: 14px;
+
+  background: rgba(247, 250, 253, 0.8);
+
+  border: 1px solid #edf2f7;
+
+  border-radius: 14px;
+}
+
+.pelanggan-detail-item.full {
+  grid-column: 1 / -1;
+}
+
+.detail-item-icon {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #edf7ff;
+
+  color: #1688f0;
+
+  font-size: 13px;
+}
+
+.pelanggan-detail-item > div:last-child {
+  min-width: 0;
+}
+
+.pelanggan-detail-item span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #98a6b8;
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+.pelanggan-detail-item strong {
+  display: block;
+
+  color: #354a68;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  line-height: 1.5;
+
+  word-break: break-word;
+}
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.pelanggan-detail-section {
+  margin: 0 26px 20px;
+
+  padding: 18px;
+
+  background: rgba(248, 251, 255, 0.72);
+
+  border: 1px solid #e9f0f7;
+
+  border-radius: 17px;
+}
+
+.pelanggan-section-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 15px;
+}
+
+.pelanggan-section-icon {
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #edf7ff;
+
+  color: #1688f0;
+
+  font-size: 13px;
+}
+
+.pelanggan-section-heading h4 {
+  margin: 0;
+
+  color: #29466f;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.pelanggan-section-heading p {
+  margin: 3px 0 0;
+
+  color: #9ba8b9;
+
+  font-size: 9px;
+}
+
+/* =========================================================
+   IDENTITAS
+========================================================= */
+
+.identitas-list {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 12px;
+}
+
+.identitas-card {
+  padding: 11px;
+
+  background: #ffffff;
+
+  border: 1px solid #e7eef6;
+
+  border-radius: 14px;
+
+  box-shadow: 0 5px 16px rgba(24, 61, 115, 0.035);
+}
+
+.identitas-card-header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 8px;
+
+  margin-bottom: 9px;
+}
+
+.identitas-card-header span {
+  color: #9aa7b8;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.identitas-card-header strong {
+  padding: 4px 7px;
+
+  border-radius: 999px;
+
+  background: #edf7ff;
+
+  color: #1688f0;
+
+  font-size: 8px;
+}
+
+.identitas-image-wrapper {
+  position: relative;
+
+  height: 150px;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  background: #f3f6fa;
+
+  cursor: pointer;
+}
+
+.identitas-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.3s ease;
+}
+
+.identitas-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  background: rgba(8, 35, 75, 0.45);
+
+  color: white;
+
+  opacity: 0;
+
+  transition: opacity 0.25s ease;
+}
+
+.identitas-image-overlay svg {
+  font-size: 17px;
+}
+
+.identitas-image-overlay span {
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.identitas-image-wrapper:hover .identitas-image {
+  transform: scale(1.04);
+}
+
+.identitas-image-wrapper:hover .identitas-image-overlay {
+  opacity: 1;
+}
+
+.identitas-hint {
+  margin: 8px 0 0;
+
+  color: #a1adbd;
+
+  font-size: 8px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EMPTY IDENTITAS
+========================================================= */
+
+.empty-identitas {
+  min-height: 130px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  color: #9ba8b8;
+
+  text-align: center;
+}
+
+.empty-identitas svg {
+  margin-bottom: 4px;
+
+  color: #b7c8da;
+
+  font-size: 25px;
+}
+
+.empty-identitas strong {
+  color: #71839a;
+
+  font-size: 11px;
+}
+
+.empty-identitas span {
+  max-width: 280px;
+
+  color: #a4afbd;
+
+  font-size: 9px;
+
+  line-height: 1.5;
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.pelanggan-form {
+  padding: 22px 26px 26px;
+}
+
+.pelanggan-form-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 17px;
+}
+
+.pelanggan-form-group {
+  min-width: 0;
+}
+
+.pelanggan-form-group.full {
+  grid-column: 1 / -1;
+}
+
+.pelanggan-form-group > label:first-child {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #50627a;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+.pelanggan-input-wrapper,
+.pelanggan-textarea-wrapper {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  width: 100%;
+
+  border: 1px solid #e0e8f1;
+
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.pelanggan-input-wrapper:focus-within,
+.pelanggan-textarea-wrapper:focus-within {
+  border-color: #70baf2;
+
+  box-shadow: 0 0 0 3px rgba(22, 136, 240, 0.08);
+}
+
+.pelanggan-input-wrapper > svg,
+.pelanggan-textarea-wrapper > svg {
+  position: absolute;
+
+  left: 13px;
+
+  color: #9aabbe;
+
+  font-size: 12px;
+
+  pointer-events: none;
+}
+
+.pelanggan-input-wrapper input,
+.pelanggan-input-wrapper select,
+.pelanggan-textarea-wrapper textarea {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #405571;
+
+  font-family: inherit;
+
+  font-size: 11px;
+}
+
+.pelanggan-input-wrapper input,
+.pelanggan-input-wrapper select {
+  height: 43px;
+
+  padding: 0 13px 0 37px;
+}
+
+.pelanggan-textarea-wrapper {
+  align-items: flex-start;
+}
+
+.pelanggan-textarea-wrapper > svg {
+  top: 14px;
+}
+
+.pelanggan-textarea-wrapper textarea {
+  min-height: 80px;
+
+  padding: 12px 13px 12px 37px;
+
+  resize: vertical;
+
+  line-height: 1.5;
+}
+
+.pelanggan-form-group small {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #a2adbc;
+
+  font-size: 8px;
+}
+
+/* =========================================================
+   FILE INPUT
+========================================================= */
+
+.pelanggan-file-input {
+  min-height: 43px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 0 12px;
+
+  border: 1px dashed #cdddeb;
+
+  border-radius: 12px;
+
+  background: #f8fbfe;
+
+  color: #7c91a9;
+
+  font-size: 10px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.pelanggan-file-input:hover {
+  border-color: #70baf2;
+
+  background: #f1f8ff;
+
+  color: #1688f0;
+}
+
+.pelanggan-file-input svg {
+  flex-shrink: 0;
+
+  color: #1688f0;
+}
+
+.pelanggan-file-input input {
+  display: none;
+}
+
+.pelanggan-file-input span {
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.pelanggan-detail-footer,
+.pelanggan-form-footer {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 9px;
+
+  padding: 16px 26px 22px;
+
+  border-top: 1px solid #edf2f7;
+}
+
+.pelanggan-btn-secondary,
+.pelanggan-btn-primary {
+  min-height: 38px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 0 14px;
+
+  border-radius: 10px;
+
+  font-family: inherit;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.pelanggan-btn-secondary {
+  border: 1px solid #dfe7ef;
+
+  background: #ffffff;
+
+  color: #667990;
+}
+
+.pelanggan-btn-secondary:hover {
+  background: #f5f8fc;
+
+  transform: translateY(-1px);
+}
+
+.pelanggan-btn-primary {
+  border: none;
+
+  background: linear-gradient(135deg, #1688f0, #146bd1);
+
+  color: white;
+
+  box-shadow: 0 7px 18px rgba(22, 136, 240, 0.2);
+}
+
+.pelanggan-btn-primary:hover {
+  transform: translateY(-1px);
+
+  box-shadow: 0 10px 24px rgba(22, 136, 240, 0.27);
+}
+
+/* =========================================================
+   IMAGE PREVIEW
+========================================================= */
+
+.pelanggan-image-preview-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 11000;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 25px;
+
+  background: rgba(5, 20, 42, 0.82);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  animation: pelanggan-overlay-show 0.2s ease;
+}
+
+.pelanggan-image-preview {
+  position: relative;
+
+  max-width: min(900px, 95vw);
+  max-height: 90vh;
+
+  padding: 8px;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+}
+
+.pelanggan-image-preview img {
+  display: block;
+
+  max-width: 100%;
+  max-height: calc(90vh - 16px);
+
+  border-radius: 12px;
+
+  object-fit: contain;
+}
+
+.pelanggan-image-preview-close {
+  position: absolute;
+
+  top: -13px;
+  right: -13px;
+
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid white;
+
+  border-radius: 50%;
+
+  background: #dc3545;
+
+  color: white;
+
+  cursor: pointer;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .pelanggan-page-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .pelanggan-header-tools {
+    width: 100%;
+  }
+
+  .pelanggan-search {
+    flex: 1;
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 700px) {
+  .pelanggan-modal-overlay {
+    padding: 16px;
+  }
+
+  .pelanggan-detail-modal,
+  .pelanggan-form-modal {
+    max-height: calc(100vh - 32px);
+
+    border-radius: 20px;
+  }
+
+  .pelanggan-detail-header,
+  .pelanggan-form-header {
+    padding: 20px;
+  }
+
+  .pelanggan-detail-grid {
+    padding: 18px 20px;
+  }
+
+  .pelanggan-detail-section {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .pelanggan-form {
+    padding: 20px;
+  }
+
+  .pelanggan-form-footer,
+  .pelanggan-detail-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 560px) {
+  .pelanggan-page-heading h1 {
+    font-size: 25px;
+  }
+
+  .pelanggan-page-heading p {
+    font-size: 12px;
+  }
+
+  .pelanggan-add-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .pelanggan-card {
+    padding: 17px;
+    border-radius: 17px;
+  }
+
+  .pelanggan-card-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .pelanggan-header-tools {
+    width: 100%;
+
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .pelanggan-search {
+    width: 100%;
+  }
+
+  .pelanggan-total {
+    text-align: left;
+  }
+
+  .pelanggan-modal-overlay {
+    padding: 10px;
+  }
+
+  .pelanggan-detail-modal,
+  .pelanggan-form-modal {
+    width: 100%;
+
+    max-height: calc(100vh - 20px);
+
+    border-radius: 18px;
+  }
+
+  .pelanggan-detail-header,
+  .pelanggan-form-header {
+    padding: 17px;
+  }
+
+  .pelanggan-detail-avatar,
+  .pelanggan-form-icon {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 13px;
+
+    font-size: 16px;
+  }
+
+  .pelanggan-detail-heading h3,
+  .pelanggan-form-title h3 {
+    font-size: 16px;
+  }
+
+  .pelanggan-detail-heading p,
+  .pelanggan-form-title p {
+    font-size: 9px;
+  }
+
+  .pelanggan-modal-close {
+    width: 33px;
+    height: 33px;
+  }
+
+  .pelanggan-detail-grid {
+    grid-template-columns: 1fr;
+
+    padding: 16px 17px;
+
+    gap: 9px;
+  }
+
+  .pelanggan-detail-item.full {
+    grid-column: auto;
+  }
+
+  .pelanggan-detail-section {
+    margin: 0 17px 17px;
+
+    padding: 14px;
+  }
+
+  .identitas-list {
+    grid-template-columns: 1fr;
+  }
+
+  .identitas-image-wrapper {
+    height: 180px;
+  }
+
+  .pelanggan-form {
+    padding: 17px;
+  }
+
+  .pelanggan-form-grid {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+  .pelanggan-form-group.full {
+    grid-column: auto;
+  }
+
+  .pelanggan-form-footer,
+  .pelanggan-detail-footer {
+    padding: 14px 17px 17px;
+  }
+
+  .pelanggan-btn-secondary,
+  .pelanggan-btn-primary {
+    flex: 1;
+
+    min-height: 40px;
+  }
+}
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+  .pelanggan-detail-heading p,
+  .pelanggan-form-title p {
+    display: none;
+  }
+
+  .pelanggan-detail-item {
+    padding: 11px;
+  }
+
+  .detail-item-icon {
+    width: 31px;
+    height: 31px;
+  }
+
+  .pelanggan-detail-item strong {
+    font-size: 11px;
+  }
+
+  .pelanggan-form-footer,
+  .pelanggan-detail-footer {
+    gap: 7px;
+  }
+
+  .pelanggan-btn-secondary,
+  .pelanggan-btn-primary {
+    padding: 0 10px;
+
+    font-size: 9px;
+  }
+}

@@ -1,0 +1,1175 @@
+/* =========================================================
+   KATEGORI
+   MODERN • RESPONSIVE • ELEGANT
+========================================================= */
+
+.kategori-body {
+  min-width: 0;
+}
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.kategori-page-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 25px;
+}
+
+.kategori-page-heading h1 {
+  margin: 0;
+
+  color: #163c88;
+
+  font-size: 28px;
+  line-height: 1.2;
+
+  font-weight: 750;
+
+  letter-spacing: -0.7px;
+}
+
+.kategori-page-heading p {
+  margin: 7px 0 0;
+
+  color: #8794aa;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+/* =========================================================
+   SEARCH KATEGORI - MODERN GLASS
+========================================================= */
+
+.kategori-header-tools {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* SEARCH WRAPPER */
+.kategori-search {
+  position: relative;
+
+  width: 250px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.72);
+
+  border: 1px solid rgba(215, 226, 240, 0.9);
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 6px 20px rgba(30, 70, 120, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+/* ICON */
+.kategori-search-icon {
+  width: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #8b9ab0;
+
+  font-size: 14px;
+
+  pointer-events: none;
+}
+
+/* INPUT */
+.kategori-search input {
+  flex: 1;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 0 36px 0 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #30486b;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.kategori-search input::placeholder {
+  color: #a1adbd;
+}
+
+/* FOCUS */
+.kategori-search:focus-within {
+  background: rgba(255, 255, 255, 0.92);
+
+  border-color: rgba(22, 136, 240, 0.45);
+
+  box-shadow:
+    0 0 0 3px rgba(22, 136, 240, 0.08),
+    0 8px 24px rgba(22, 136, 240, 0.08);
+}
+
+/* CLEAR BUTTON */
+.kategori-search-clear {
+  position: absolute;
+
+  right: 9px;
+
+  width: 23px;
+  height: 23px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #eef3f9;
+
+  color: #8998ad;
+
+  font-size: 15px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.kategori-search-clear:hover {
+  background: #e4edf8;
+
+  color: #1688f0;
+
+  transform: scale(1.05);
+}
+
+
+/* =========================================================
+   RESPONSIVE SEARCH
+========================================================= */
+
+@media (max-width: 900px) {
+  .kategori-header-tools {
+    gap: 12px;
+  }
+
+  .kategori-search {
+    width: 220px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .kategori-card-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .kategori-header-tools {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 12px;
+  }
+
+  .kategori-search {
+    width: 100%;
+    height: 44px;
+  }
+
+  .kategori-total {
+    align-self: flex-start;
+  }
+}
+/* =========================================================
+   ADD BUTTON
+========================================================= */
+
+.kategori-add-btn {
+  flex-shrink: 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  min-height: 44px;
+
+  padding: 0 17px;
+
+  border: none;
+  border-radius: 13px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1688f0,
+      #2864e8
+    );
+
+  color: white;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 9px 22px rgba(22, 136, 240, 0.22);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.kategori-add-btn span {
+  font-size: 19px;
+
+  line-height: 1;
+}
+
+.kategori-add-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 13px 28px rgba(22, 136, 240, 0.3);
+}
+
+.kategori-add-btn:active {
+  transform: translateY(0);
+}
+
+/* =========================================================
+   MAIN CARD
+   GLASSMORPHISM SUBTLE
+========================================================= */
+
+.kategori-card {
+  width: 100%;
+
+  padding: 24px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.96),
+      rgba(248, 252, 255, 0.88)
+    );
+
+  border: 1px solid rgba(218, 230, 244, 0.9);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 35px rgba(24, 61, 115, 0.06);
+
+  backdrop-filter: blur(14px);
+
+  -webkit-backdrop-filter: blur(14px);
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.kategori-card-header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 22px;
+}
+
+.kategori-card-header h3 {
+  margin: 0;
+
+  color: #183c82;
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+.kategori-card-header p {
+  margin: 5px 0 0;
+
+  color: #98a4b6;
+
+  font-size: 11px;
+}
+
+.kategori-total {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  padding: 9px 13px;
+
+  border-radius: 12px;
+
+  background: #f4f8fd;
+
+  border: 1px solid #e6edf5;
+}
+
+.kategori-total strong {
+  color: #1688f0;
+
+  font-size: 17px;
+
+  line-height: 1;
+}
+
+.kategori-total span {
+  margin-top: 4px;
+
+  color: #94a1b3;
+
+  font-size: 9px;
+}
+
+/* =========================================================
+   TABLE RESPONSIVE
+========================================================= */
+
+.kategori-table-responsive {
+  width: 100%;
+
+  max-width: 100%;
+
+  overflow-x: auto;
+
+  overflow-y: hidden;
+
+  border-radius: 13px;
+
+  -webkit-overflow-scrolling: touch;
+
+  scrollbar-width: thin;
+}
+
+.kategori-table-responsive::-webkit-scrollbar {
+  height: 6px;
+}
+
+.kategori-table-responsive::-webkit-scrollbar-track {
+  background: #f1f5f9;
+
+  border-radius: 10px;
+}
+
+.kategori-table-responsive::-webkit-scrollbar-thumb {
+  background: #c8d8ea;
+
+  border-radius: 10px;
+}
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.kategori-table {
+  width: 100%;
+
+  min-width: 560px;
+
+  border-collapse: separate;
+
+  border-spacing: 0;
+
+  background: #ffffff;
+}
+
+.kategori-table th {
+  padding: 13px 15px;
+
+  background: #f5f8fc;
+
+  color: #7c8ba2;
+
+  border-bottom: 1px solid #e5ecf4;
+
+  text-align: left;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.7px;
+
+  white-space: nowrap;
+}
+
+.kategori-table th:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+.kategori-table th:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+.kategori-table td {
+  padding: 14px 15px;
+
+  color: #53637a;
+
+  border-bottom: 1px solid #edf1f6;
+
+  font-size: 12px;
+
+  white-space: nowrap;
+}
+
+.kategori-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.kategori-table tbody tr:hover {
+  background: #f8fbff;
+}
+
+.kategori-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.kategori-number {
+  color: #9aa7b8;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+/* =========================================================
+   CATEGORY NAME
+========================================================= */
+
+.kategori-name {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #344968;
+
+  font-weight: 600;
+}
+
+.kategori-name-icon {
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #e7f5ff,
+      #e0ebff
+    );
+
+  color: #1688f0;
+
+  font-size: 11px;
+
+  font-weight: 750;
+}
+
+/* =========================================================
+   ACTION
+========================================================= */
+
+.action-button {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+.kategori-action {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  border-radius: 9px;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.kategori-action:hover {
+  transform: translateY(-2px);
+}
+
+.kategori-action.edit {
+  background: #fff6df;
+
+  color: #d89b00;
+}
+
+.kategori-action.edit:hover {
+  background: #ffc83d;
+
+  color: white;
+}
+
+.kategori-action.delete {
+  background: #ffedef;
+
+  color: #df4650;
+}
+
+.kategori-action.delete:hover {
+  background: #df4650;
+
+  color: white;
+}
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.kategori-empty {
+  padding: 45px 20px !important;
+
+  text-align: center !important;
+}
+
+.kategori-empty-content {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.kategori-empty-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 10px;
+
+  border-radius: 14px;
+
+  background: #f1f6fc;
+
+  font-size: 20px;
+}
+
+.kategori-empty-content strong {
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+.kategori-empty-content span {
+  margin-top: 4px;
+
+  color: #a1adbd;
+
+  font-size: 10px;
+}
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.kategori-loading {
+  min-height: 250px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+}
+
+.kategori-loading p {
+  margin: 0;
+
+  color: #8997aa;
+
+  font-size: 12px;
+}
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.kategori-pagination {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  margin-top: 20px;
+}
+
+.kategori-pagination-btn {
+  min-width: 35px;
+  height: 35px;
+
+  padding: 0 9px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #dce6f1;
+
+  border-radius: 9px;
+
+  background: white;
+
+  color: #54708f;
+
+  font-size: 12px;
+
+  font-weight: 650;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border 0.2s ease,
+    color 0.2s ease;
+}
+
+.kategori-pagination-btn:hover:not(:disabled) {
+  background: #eef7ff;
+
+  border-color: #1688f0;
+
+  color: #1688f0;
+}
+
+.kategori-pagination-btn.active {
+  background:
+    linear-gradient(
+      135deg,
+      #1688f0,
+      #2864e8
+    );
+
+  border-color: transparent;
+
+  color: white;
+
+  box-shadow:
+    0 5px 15px rgba(22, 136, 240, 0.2);
+}
+
+.kategori-pagination-btn:disabled {
+  opacity: 0.4;
+
+  cursor: not-allowed;
+}
+
+/* =========================================================
+   PAGINATION INFO
+========================================================= */
+
+.kategori-pagination-info {
+  margin-top: 11px;
+
+  color: #9aa7b8;
+
+  text-align: center;
+
+  font-size: 10px;
+}
+
+.kategori-pagination-info strong {
+  color: #64748b;
+}
+
+/* =========================================================
+   MODAL
+   GLASSMORPHISM
+========================================================= */
+
+.modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 2000;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background:
+    rgba(8, 29, 61, 0.48);
+
+  backdrop-filter: blur(8px);
+
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.modal-box {
+  width: 100%;
+
+  max-width: 440px;
+
+  padding: 25px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.98),
+      rgba(244, 250, 255, 0.94)
+    );
+
+  border: 1px solid rgba(255, 255, 255, 0.85);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 25px 70px rgba(5, 30, 70, 0.22);
+
+  backdrop-filter: blur(20px);
+
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* =========================================================
+   MODAL HEADER
+========================================================= */
+
+.modal-header {
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 23px;
+}
+
+.modal-eyebrow {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #1688f0;
+
+  font-size: 9px;
+
+  font-weight: 750;
+
+  letter-spacing: 1.3px;
+}
+
+.modal-header h3 {
+  margin: 0;
+
+  color: #183c82;
+
+  font-size: 19px;
+
+  font-weight: 750;
+}
+
+.modal-close {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #f2f6fa;
+
+  color: #718198;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.modal-close:hover {
+  background: #e8eef5;
+
+  color: #163c88;
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.modal-box form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.form-group label {
+  color: #52647c;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+.form-group input {
+  width: 100%;
+
+  height: 46px;
+
+  padding: 0 14px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dce6f1;
+
+  border-radius: 11px;
+
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.85);
+
+  color: #263d5d;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  transition:
+    border 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder {
+  color: #adb8c6;
+}
+
+.form-group input:focus {
+  border-color: #1688f0;
+
+  box-shadow:
+    0 0 0 4px rgba(22, 136, 240, 0.08);
+}
+
+/* =========================================================
+   MODAL ACTION
+========================================================= */
+
+.modal-action {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 9px;
+
+  padding-top: 3px;
+}
+
+.modal-btn {
+  min-height: 40px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 0 15px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  font-family: inherit;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.modal-btn.cancel {
+  background: #f1f4f8;
+
+  color: #69798e;
+}
+
+.modal-btn.cancel:hover {
+  background: #e6ebf1;
+}
+
+.modal-btn.save {
+  background:
+    linear-gradient(
+      135deg,
+      #1688f0,
+      #2864e8
+    );
+
+  color: white;
+
+  box-shadow:
+    0 7px 18px rgba(22, 136, 240, 0.2);
+}
+
+.modal-btn.save:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 10px 22px rgba(22, 136, 240, 0.28);
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .kategori-page-heading {
+    align-items: flex-start;
+  }
+
+  .kategori-card {
+    padding: 20px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .kategori-page-heading {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 15px;
+
+    margin-bottom: 18px;
+  }
+
+  .kategori-page-heading h1 {
+    font-size: 24px;
+  }
+
+  .kategori-page-heading p {
+    max-width: 320px;
+
+    font-size: 11px;
+  }
+
+  .kategori-add-btn {
+    width: 100%;
+  }
+
+  .kategori-card {
+    padding: 15px;
+
+    border-radius: 16px;
+  }
+
+  .kategori-card-header {
+    align-items: flex-start;
+
+    margin-bottom: 17px;
+  }
+
+  .kategori-card-header h3 {
+    font-size: 15px;
+  }
+
+  .kategori-card-header p {
+    max-width: 220px;
+
+    line-height: 1.4;
+  }
+
+  .kategori-total {
+    padding: 8px 10px;
+  }
+
+  .kategori-total strong {
+    font-size: 15px;
+  }
+
+  .kategori-total span {
+    font-size: 8px;
+  }
+
+  .kategori-table {
+    min-width: 500px;
+  }
+
+  .kategori-table th,
+  .kategori-table td {
+    padding: 12px;
+  }
+
+  .kategori-pagination {
+    gap: 5px;
+  }
+
+  .kategori-pagination-btn {
+    min-width: 33px;
+    height: 33px;
+  }
+
+  /* MODAL */
+
+  .modal-overlay {
+    padding: 15px;
+  }
+
+  .modal-box {
+    padding: 20px;
+
+    border-radius: 18px;
+  }
+
+  .modal-header h3 {
+    font-size: 17px;
+  }
+
+  .modal-action {
+    flex-direction: column-reverse;
+  }
+
+  .modal-btn {
+    width: 100%;
+
+    min-height: 43px;
+  }
+}
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .kategori-card {
+    padding: 12px;
+  }
+
+  .kategori-card-header {
+    flex-direction: column;
+  }
+
+  .kategori-total {
+    align-items: flex-start;
+  }
+
+  .kategori-table {
+    min-width: 470px;
+  }
+
+  .kategori-page-heading h1 {
+    font-size: 22px;
+  }
+
+  .modal-box {
+    padding: 17px;
+  }
+}
