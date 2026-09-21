@@ -29,21 +29,33 @@ Aplikasi ini digunakan oleh admin Amanah Elektronik untuk mengelola operasional 
 
 ## Tampilan
 
-### Login
+### Login Admin
 
-Screenshot akan ditambahkan.
+![Login Admin](screenshots/login.png)
 
 ### Dashboard
 
-Screenshot akan ditambahkan.
+![Dashboard](screenshots/dashboard.png)
 
-### Data Alat
+### Manajemen Kategori
 
-Screenshot akan ditambahkan.
+![Manajemen Kategori](screenshots/kategori.png)
 
-### Data Penyewaan
+### Manajemen Alat
 
-Screenshot akan ditambahkan.
+![Manajemen Alat](screenshots/alat.png)
+
+### Manajemen Pelanggan
+
+![Manajemen Pelanggan](screenshots/pelanggan.png)
+
+### Manajemen Penyewaan
+
+![Manajemen Penyewaan](screenshots/penyewaan.png)
+
+### Laporan
+
+![Laporan](screenshots/laporan.png)
 
 ## Backend
 
